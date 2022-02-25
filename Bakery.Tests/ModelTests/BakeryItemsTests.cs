@@ -12,7 +12,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadConstructor_CreateInstanceOfBread_Bread()
     {
-      Bread bread = new Bread(4);
+      Bread bread = new Bread(4, 7);
       Assert.AreEqual(typeof(Bread), bread.GetType());
     }
 
@@ -20,10 +20,30 @@ namespace Bakery.Tests
     public void GetQuantity_ReturnQuantity_Int()
     {
       int quantity = 4;
-      Bread bread = new Bread(quantity);
+      int cost = 7;
+      Bread bread = new Bread(quantity, cost);
       int result = bread.Quantity;
       Assert.AreEqual(quantity, result);
     }
+
+    [TestMethod]
+    public void GetCost_ReturnCost_Int()
+    {
+      int quantity = 4;
+      int cost = 7;
+      Bread bread = new Bread(quantity, cost);
+      int result = bread.Cost;
+      Assert.AreEqual(cost, result);
+    }
+
+    // [TestMethod]
+    // public void GetCost_ReturnCost_Int()
+    // {
+    //   int amount = 4;
+    //   Bread bread = new Bread(quantity);
+    //   int result = bread.Quantity;
+    //   Assert.AreEqual(quantity, result);
+    // }
   }
 
   [TestClass]
