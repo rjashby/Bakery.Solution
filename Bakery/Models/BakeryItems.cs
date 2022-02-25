@@ -4,13 +4,13 @@ using System.Linq;
 
 namespace Bakery.Models
 {
- public class Bread
+  public class Bread
   {
-    public int Quantity { get; set; }
+    public int Quantity { get; }
     
-    public Bread(int quantity)
+    public Bread (int quantity)
     {
-      Quantity = quantity;
+  
     }
 
     // public int GetCost(int amount)
