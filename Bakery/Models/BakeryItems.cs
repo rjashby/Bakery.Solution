@@ -28,6 +28,7 @@ namespace Bakery.Models
     public Pastry (int quantity, int cost)
     {
       Quantity = quantity;
+      Cost = cost;
     }
 
     // public int GetCost(int amount)
