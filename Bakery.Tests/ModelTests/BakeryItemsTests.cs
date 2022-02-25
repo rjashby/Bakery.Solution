@@ -39,9 +39,9 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculateAmount_ReturnAmount_Int()
     {
-      int amount = 1;
+      int amount = 2;
       Bread bread = new Bread(4, 0);
-      Assert.AreEqual(5, bread.BreadAmount(amount));
+      Assert.AreEqual(10, bread.BreadAmount(amount));
     }
   }
 
@@ -75,12 +75,12 @@ namespace Bakery.Tests
       Assert.AreEqual(cost, result);
     }
 
-     [TestMethod]
+    [TestMethod]
     public void CalculateAmount_ReturnAmount_Int()
     {
-      int amount = 2;
+      int amount = 6;
       Pastry pastry = new Pastry(4, 0);
-      Assert.AreEqual(4, pastry.PastryAmount(amount));
+      Assert.AreEqual(10, pastry.PastryAmount(amount));
     }
   }
 }

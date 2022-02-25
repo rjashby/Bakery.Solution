@@ -49,12 +49,31 @@ namespace Bakery.Models
     public int PastryAmount(int amount)
     {
       Pastry pastry = new Pastry(4, 0);
-      pastry.Cost = amount * 2;
+      switch(amount) 
+      {
+        case 1:
+          pastry.Cost = amount * 2;
+          break;
+        case 2:
+          pastry.Cost = amount * 2;
+          break;
+        case 3:
+          pastry.Cost = 5;
+          break;  
+        case 4:
+          pastry.Cost = (amount * 2) - 1;
+          break;  
+        case 5:
+          pastry.Cost = (amount * 2) - 1;
+          break;  
+        case 6:
+          pastry.Cost = 10;
+          break;    
+        default:
+          Console.WriteLine("Limit of 6 pastries per customer");
+          break;
+          }
       return pastry.Cost;
     }
-    // public int GetCost(int amount)
-    // {
-    //   return 0;
-    // }
   }
 }
