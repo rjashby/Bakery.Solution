@@ -29,13 +29,13 @@ __
 
 2) _Additionally, you will need to download the .NET framework, which can be downloaded at [.NET5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)_.
 
-**<span style="color:green">Cloning</span>**
+**Cloning**
 
 1) _In order to utilize this page on your local machine, you will need to clone a copy of this repository_
 
 2) _Navigate to your desired directory in your command terminal and run:_
 
-  ``` $ git clone https://github.com/rjashby/Bakery.Solution ```
+``` $ git clone https://github.com/rjashby/Bakery.Solution ```
 
 3) _Once cloned, open the folder of the cloned repository in your code editor to view all the necessary files._
 
@@ -51,17 +51,11 @@ __
 
 **Install Your Testing Environment** 
 
-1) _To install a testing environment for the project, run the following command in your terminal:_
+1) _To install a testing environment for the project, run the following command in your terminal:_ ```dotnet restore Bakery.Tests```
 
-  ```dotnet restore Bakery.Tests```
+2) _Alternatively, you can navigate to the testing folder by running:_ ``` cd Bakery.Tests ```
 
-2) _Alternatively you can navigate to the testing folder by running:_
-
-  ``` cd Bakery.Tests ```
-
-_from there, you can simply run:_ 
-
-  ```dotnet restore```
+_from there, you can simply run:_  ```dotnet restore```
 
 3) _Once installed, you will see "obj" folders in both your Bakery and Bakery.Tests directories._
 
@@ -73,15 +67,15 @@ _from there, you can simply run:_
 
 1) _To run the tests, run the following command in your terminal:_
 
-  ```dotnet test Bakery.Tests```
+```dotnet test Bakery.Tests```
 
 2) _Alternatively you can navigate to the testing folder by running:_
 
-  ``` cd Bakery.Tests ```
+``` cd Bakery.Tests ```
 
 _from there, you can simply run:_ 
 
-  ```dotnet test```
+```dotnet test```
 
 ## Known Bugs 
 
