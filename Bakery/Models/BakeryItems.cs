@@ -20,6 +20,9 @@ namespace Bakery.Models
       Bread bread = new Bread(4, 0);
       switch(amount) 
       {
+        case 0:
+          bread.Cost = 0;
+          break;
         case 1:
           bread.Cost = amount * 5;
           break;
@@ -51,6 +54,9 @@ namespace Bakery.Models
       Pastry pastry = new Pastry(4, 0);
       switch(amount) 
       {
+        case 0:
+          pastry.Cost = 0;
+          break;
         case 1:
           pastry.Cost = amount * 2;
           break;
