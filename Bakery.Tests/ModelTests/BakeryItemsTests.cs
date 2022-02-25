@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ScrabbleScorer.Tests 
+namespace Bakery.Tests 
 {
   [TestClass]
   public class Bread
@@ -15,6 +15,16 @@ namespace ScrabbleScorer.Tests
       Bread bread = new Bread();
       Assert.AreEqual(typeof(Bread), bread.GetType());
     }
-    
+
+    [TestClass]
+    public class Pastry
+    {
+      [TestMethod]
+      public void PastryConstructor_CreateInstanceOfPastry_Pastry()
+      {
+        Pastry Pastry = new Pastry();
+        Assert.AreEqual(typeof(Pastry), Pastry.GetType());
+      }
+    }
   }
 }
