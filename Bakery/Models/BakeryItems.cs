@@ -15,10 +15,10 @@ namespace Bakery.Models
       Cost = cost;
     }
 
-    // public int BreadAmount(int amount)
-    // {
-    //   return 0;
-    // }
+    public int BreadAmount(int amount)
+    {
+      return 0;
+    }
   }
   public class Pastry
   {

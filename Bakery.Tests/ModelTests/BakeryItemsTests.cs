@@ -36,14 +36,13 @@ namespace Bakery.Tests
       Assert.AreEqual(cost, result);
     }
 
-    // [TestMethod]
-    // public void GetCost_ReturnCost_Int()
-    // {
-    //   int amount = 4;
-    //   Bread bread = new Bread(quantity);
-    //   int result = bread.Quantity;
-    //   Assert.AreEqual(quantity, result);
-    // }
+    [TestMethod]
+    public void CalculateAmount_ReturnAmount_Int()
+    {
+      int amount = 1;
+      Bread bread = new Bread(4, 7);
+      Assert.AreEqual(5, bread.BreadAmount(amount));
+    }
   }
 
   [TestClass]
