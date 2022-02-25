@@ -1,4 +1,3 @@
-
 # _Pete's Bakery_ 
 
 #### By _**Ryan Ashby**_ 
@@ -24,16 +23,21 @@ __
 
 ## Setup/Installation Requirements 
 
+**Required Software**
+
+1) _You will need some type of coding software should you wish to view and edit the code. VS Code is an example of a free code editor, which can be downloaded at [VS Code](https://code.visualstudio.com/)_.
+
+2) _Additionally, you will need to download the .NET framework, which can be downloaded at [.NET5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)_.
+
 **Cloning**
 
 1) _In order to utilize this page on your local machine, you will need to clone a copy of this repository_
 
 2) _Navigate to your desired directory in your command terminal and run:_
+
 ``` $ git clone https://github.com/rjashby/Bakery.Solution" ```
 
-3) _Should you wish to edit the code you cloned, you will need coding software. VS Code is an example of a free code editor, which can be downloaded at https://code.visualstudio.com/_.
-
-4) _Once your coding software is installed, open the folder of the cloned repository, which will contain the necessary files._
+3) _Once cloned, open the folder of the cloned repository in your code editor to view all the necessary files._
 
 
 **Downloading**
@@ -48,11 +52,16 @@ __
 **Install Your Testing Environment** 
 
 1) _To install a testing environment for the project, run the following command in your terminal:_
+
 ```dotnet restore Bakery.Tests```
 
 2) _Alternatively you can navigate to the testing folder by running:_
+
 ``` cd Bakery.Tests ```
-_from there, you can simply run: ```dotnet restore```
+
+_from there, you can simply run:_ 
+
+```dotnet restore```
 
 3) _Once installed, you will see "obj" folders in both your Bakery and Bakery.Tests directories._
 
@@ -60,11 +69,19 @@ _from there, you can simply run: ```dotnet restore```
 
 **Testing**
 
-1) _Once you run "npm install", you can run test with Jest, a testing suite to ensure that code is working properly._
+1) _Specific tests have already been written and can be found in the "ModelTests" folder, in the "BakeryItems.Tests.cs" file._
 
-2) _Specific tests are written and can be found in the "tests" folder._
+1) _To run the tests, run the following command in your terminal:_
 
-3) _To test the code, simply run "npm test" in your terminal. Your terminal will show which tests are passing, which are failing, and the coverage of lines the tests encapsulate._
+```dotnet test Bakery.Tests```
+
+2) _Alternatively you can navigate to the testing folder by running:_
+
+``` cd Bakery.Tests ```
+
+_from there, you can simply run:_ 
+
+```dotnet test```
 
 ## Known Bugs 
 
