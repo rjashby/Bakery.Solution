@@ -24,8 +24,8 @@ namespace Bakery.Models
   }
   public class Pastry
   {
-    public int Quantity { get; }
-    public int Cost { get; }
+    public int Quantity { get; set; }
+    public int Cost { get; set; }
     
     public Pastry (int quantity, int cost)
     {
@@ -34,7 +34,9 @@ namespace Bakery.Models
     }
     public int PastryAmount(int amount)
     {
-      return 0;
+      Pastry pastry = new Pastry(4, 0);
+      pastry.Cost = amount * 2;
+      return pastry.Cost;
     }
     // public int GetCost(int amount)
     // {
