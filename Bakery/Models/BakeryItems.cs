@@ -13,10 +13,10 @@ namespace Bakery.Models
       Quantity = quantity;
     }
 
-    // public int GetCost(int amount)
-    // {
-    //   return 0;
-    // }
+    public int GetCost(int amount)
+    {
+      return 0;
+    }
   }
   public class Pastry
   {
