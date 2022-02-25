@@ -74,5 +74,13 @@ namespace Bakery.Tests
       int result = pastry.Cost;
       Assert.AreEqual(cost, result);
     }
+
+     [TestMethod]
+    public void CalculateAmount_ReturnAmount_Int()
+    {
+      int amount = 2;
+      Pastry pastry = new Pastry(4, 0);
+      Assert.AreEqual(4, pastry.PastryAmount(amount));
+    }
   }
 }

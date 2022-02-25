@@ -32,7 +32,10 @@ namespace Bakery.Models
       Quantity = quantity;
       Cost = cost;
     }
-
+    public int PastryAmount(int amount)
+    {
+      return 0;
+    }
     // public int GetCost(int amount)
     // {
     //   return 0;
