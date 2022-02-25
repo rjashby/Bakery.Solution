@@ -5,7 +5,8 @@ using System.Text.RegularExpressions;
 
 namespace Bakery.Models
 {
-  public class Bread
+  int totalCost = 0;
+ public class Bread
   {
     
   }
