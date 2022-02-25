@@ -6,8 +6,8 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public int Quantity { get; }
-    public int Cost { get; }
+    public int Quantity { get; set; }
+    public int Cost { get; set; }
     
     public Bread (int quantity, int cost)
     {
@@ -17,7 +17,9 @@ namespace Bakery.Models
 
     public int BreadAmount(int amount)
     {
-      return 0;
+      Bread bread = new Bread(4, 0);
+      bread.Cost = amount * 5;
+      return bread.Cost;
     }
   }
   public class Pastry

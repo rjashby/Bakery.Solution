@@ -40,7 +40,7 @@ namespace Bakery.Tests
     public void CalculateAmount_ReturnAmount_Int()
     {
       int amount = 1;
-      Bread bread = new Bread(4, 7);
+      Bread bread = new Bread(4, 0);
       Assert.AreEqual(5, bread.BreadAmount(amount));
     }
   }
