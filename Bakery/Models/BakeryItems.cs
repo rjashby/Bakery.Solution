@@ -23,8 +23,9 @@ namespace Bakery.Models
   public class Pastry
   {
     public int Quantity { get; }
+    public int Cost { get; }
     
-    public Pastry (int quantity)
+    public Pastry (int quantity, int cost)
     {
       Quantity = quantity;
     }

@@ -52,7 +52,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void PastryConstructor_CreateInstanceOfPastry_Pastry()
     {
-      Pastry pastry = new Pastry(4);
+      Pastry pastry = new Pastry(4, 7);
       Assert.AreEqual(typeof(Pastry), pastry.GetType());
     }
 
@@ -60,9 +60,20 @@ namespace Bakery.Tests
     public void GetQuantity_ReturnQuantity_Int()
     {
       int quantity = 2;
-      Pastry pastry = new Pastry(quantity);
+      int cost = 5;
+      Pastry pastry = new Pastry(quantity, cost);
       int result = pastry.Quantity;
       Assert.AreEqual(quantity, result);
+    }
+
+    [TestMethod]
+    public void GetCost_ReturnCost_Int()
+    {
+      int quantity = 4;
+      int cost = 7;
+      Pastry pastry = new Pastry(quantity, cost);
+      int result = pastry.Cost;
+      Assert.AreEqual(cost, result);
     }
   }
 }
