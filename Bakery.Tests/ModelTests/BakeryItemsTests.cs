@@ -7,12 +7,13 @@ using System.Linq;
 namespace ScrabbleScorer.Tests 
 {
   [TestClass]
-  public class CalculateTests
+  public class Bread
   {
     [TestMethod]
-    public void XXXX()
+    public void BreadConstructor_CreateInstanceOfBread_Bread()
     {
-      
+      Bread bread = new Bread();
+      Assert.AreEqual(typeof(Bread), bread.GetType());
     }
     
   }

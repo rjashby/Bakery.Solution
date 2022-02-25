@@ -4,13 +4,22 @@ using System.Linq;
 
 namespace Bakery.Models
 {
-  int totalCost = 0;
  public class Bread
   {
-    int breadCost = 0;
+    public int BreadCost { get; set ;}
+    
+    public Bread(int breadCost)
+    {
+      BreadCost = breadCost;
+    }
   }
-  public class Pastry
-  {
-    int pastyCost = 0;
-  }
+  // public class Pastry
+  // {
+  //   public string PastryCost { get; set ;}
+    
+  //   public Pastry(int pastryCost)
+  //   {
+  //     PastryCost = pastryCost;
+  //   }
+  // }
 }
