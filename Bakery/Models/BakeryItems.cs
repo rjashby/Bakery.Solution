@@ -41,7 +41,6 @@ namespace Bakery.Models
 
     public List<int> OrderList(int num)
     {
-      int num = 9;
       List<int> Count = new List<int>();
       for (int i = 0; i <= num; i++) 
       {
@@ -55,21 +54,21 @@ namespace Bakery.Models
       Bread bread = new Bread(0, 0);
       bread.Quantity = amount;
       List<int> breadList = bread.OrderList(amount);
-      // foreach(int num in breadList)
-      // {
-      //   if (num == 0)
-      //   {
-      //     bread.Cost += 0;
-      //   }
-      //   else if (num % 3 != 0)
-      //   {
-      //     bread.Cost += 2;
-      //   } 
-      //   else
-      //   {
-      //     bread.Cost += 1;
-      //   }
-      // }
+      foreach(int num in breadList)
+      {
+        if (num == 0)
+        {
+          bread.Cost += 0;
+        }
+        else if (num % 3 != 0)
+        {
+          bread.Cost += 5;
+        } 
+        else
+        {
+          bread.Cost += 0;
+        }
+      }
       return bread.Cost;
     }
   }
@@ -119,7 +118,6 @@ namespace Bakery.Models
 
     public List<int> OrderList(int num)
     {
-      int num = 9;
       List<int> Count = new List<int>();
       for (int i = 0; i <= num; i++) 
       {
