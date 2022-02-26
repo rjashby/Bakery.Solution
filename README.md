@@ -19,7 +19,11 @@
 
 ## Description 
 
-__
+_This simple C# application gathers input from a user in the form of two numbers. The numbers correspond to a "bread" order, and a "pastry" order respectively._
+
+_The input provided is run through two separate methods for calculating costs for the two classes of bread and pastry. Specifically, the input entered is run through a switch/case function that determines and increments cost based on the entered amount ordered._
+
+_The application returns the user's bread and pastry cost separately, and ultimately returns their total cost of their order._
 
 ## Setup/Installation Requirements 
 
@@ -33,9 +37,7 @@ __
 
 1) _In order to utilize this page on your local machine, you will need to clone a copy of this repository_
 
-2) _Navigate to your desired directory in your command terminal and run:_
-
-``` $ git clone https://github.com/rjashby/Bakery.Solution ```
+2) _Navigate to your desired directory in your command terminal and run:_ ``` $ git clone https://github.com/rjashby/Bakery.Solution ```
 
 3) _Once cloned, open the folder of the cloned repository in your code editor to view all the necessary files._
 
@@ -65,17 +67,17 @@ _from there, you can simply run:_  ```dotnet restore```
 
 1) _Specific tests have already been written and can be found in the "ModelTests" folder, in the "BakeryItems.Tests.cs" file._
 
-1) _To run the tests, run the following command in your terminal:_
+1) _To run the tests, run the following command in your terminal:_ ```dotnet test Bakery.Tests```
 
-```dotnet test Bakery.Tests```
+2) _Alternatively you can navigate to the testing folder by running:_ ``` cd Bakery.Tests ```
 
-2) _Alternatively you can navigate to the testing folder by running:_
+_from there, you can simply run:_  ```dotnet test```
 
-``` cd Bakery.Tests ```
+**Running the Program**
 
-_from there, you can simply run:_ 
+1) _In your terminal, navigate to the Bakery folder by starting at the root directory and typing the following into your terminal:_ ```cd Bakery```
 
-```dotnet test```
+2) _Once there, you can run the program by simply entering the following in your terminal:_ ```dotnet run```
 
 ## Known Bugs 
 

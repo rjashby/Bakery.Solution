@@ -17,7 +17,8 @@ namespace Bakery.Models
 
     public int BreadAmount(int amount)
     {
-      Bread bread = new Bread(4, 0);
+      Bread bread = new Bread(0, 0);
+      bread.Quantity = amount;
       switch(amount) 
       {
         case 0:
@@ -33,7 +34,7 @@ namespace Bakery.Models
           bread.Cost = (amount * 5) - 5;
           break;  
         default:
-          Console.WriteLine("Limit of 3 loaves per customer");
+          Console.WriteLine("Limit of 3 loaves per customer.");
           break;
           }
       return bread.Cost;
@@ -51,7 +52,8 @@ namespace Bakery.Models
     }
     public int PastryAmount(int amount)
     {
-      Pastry pastry = new Pastry(4, 0);
+      Pastry pastry = new Pastry(0, 0);
+      pastry.Quantity = amount;
       switch(amount) 
       {
         case 0:
@@ -76,7 +78,7 @@ namespace Bakery.Models
           pastry.Cost = 10;
           break;    
         default:
-          Console.WriteLine("Limit of 6 pastries per customer");
+          Console.WriteLine("Limit of 6 pastries per customer.");
           break;
           }
       return pastry.Cost;
