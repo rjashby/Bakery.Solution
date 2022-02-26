@@ -21,7 +21,7 @@
 
 _This simple C# application gathers input from a user in the form of two numbers. The numbers correspond to a "bread" order, and a "pastry" order respectively._
 
-_The input provided is run through two separate methods for calculating costs for the two classes of bread and pastry. Specifically, the input entered is run through a switch/case function that determines and increments cost based on the entered amount ordered._
+_The input provided is run through two separate methods for calculating costs for the two classes of bread and pastry. Specifically, the input entered is run through a for each loop that determines and increments cost based on the entered amount ordered._
 
 _The application returns the user's bread and pastry cost separately, and ultimately returns their total cost of their order._
 
