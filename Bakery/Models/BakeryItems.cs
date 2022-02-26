@@ -14,7 +14,6 @@ namespace Bakery.Models
       Quantity = quantity;
       Cost = cost;
     }
-
     public int BreadAmount(int amount)
     {
       Bread bread = new Bread(0, 0);
@@ -37,6 +36,40 @@ namespace Bakery.Models
           Console.WriteLine("Limit of 3 loaves per customer.");
           break;
           }
+      return bread.Cost;
+    }
+
+    public List<int> OrderList(int num)
+    {
+      int num = 9;
+      List<int> Count = new List<int>();
+      for (int i = 0; i <= num; i++) 
+      {
+      Count.Add(i);
+      }
+      return Count;
+    }
+
+    public int BreadAmount2(int amount)
+    {
+      Bread bread = new Bread(0, 0);
+      bread.Quantity = amount;
+      List<int> breadList = bread.OrderList(amount);
+      // foreach(int num in breadList)
+      // {
+      //   if (num == 0)
+      //   {
+      //     bread.Cost += 0;
+      //   }
+      //   else if (num % 3 != 0)
+      //   {
+      //     bread.Cost += 2;
+      //   } 
+      //   else
+      //   {
+      //     bread.Cost += 1;
+      //   }
+      // }
       return bread.Cost;
     }
   }
@@ -81,6 +114,39 @@ namespace Bakery.Models
           Console.WriteLine("Limit of 6 pastries per customer.");
           break;
           }
+      return pastry.Cost;
+    }
+
+    public List<int> OrderList(int num)
+    {
+      int num = 9;
+      List<int> Count = new List<int>();
+      for (int i = 0; i <= num; i++) 
+      {
+      Count.Add(i);
+      }
+      return Count;
+    }
+    public int PastryAmount2(int amount)
+    {
+      Pastry pastry = new Pastry(0, 0);
+      pastry.Quantity = amount;
+      List<int> pastryList = pastry.OrderList(amount);
+      foreach(int num in pastryList)
+      {
+        if (num == 0)
+        {
+          pastry.Cost += 0;
+        }
+        else if (num % 3 != 0)
+        {
+          pastry.Cost += 2;
+        } 
+        else
+        {
+          pastry.Cost += 1;
+        }
+      }
       return pastry.Cost;
     }
   }
